@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="./client.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="home">
+        <div class="navbar">
+            <div class="logo">AuthAPI</div>
+            <div class="links">
+                <ul>
+                    <li>Logout</li>
+                </ul>
+            </div>
+        </div>
+        <h3></h3>
+        <h5 class="state" style="display: none;">
+            <div class="refresh">You're token has been refreshed!</div>
+        </h5>
+    </div>
+    <div class="form-container" style="display: none;">
+        <div class="failed" style="display: none;">
+            Tokens Expired
+        </div>
+        <form action="" method="POST" id="loginForm">
+            <h3>Please Login</h3>
+            <input type="text" name="username" placeholder="username">
+            <input type="password" name="password" placeholder="password">
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+
+</html>
